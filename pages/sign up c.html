@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <title>Customer Registration
+    </title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+
+    <link rel="stylesheet" href="../css/style1.css" />
+    
+  </head>
+  <body>
+    <div style="display: flex">
+      <div id="logo">
+        <img src="../images/logo.png" id="logoImg" />
+      </div>
+
+      <div class="nav_Head_box">
+        <div id="hedding1">
+          <h1>CABWAY Online Vehicle Booking Service</h1>
+        </div>
+
+        <div>
+          <nav class="navbar">
+            <div class="navItem"><a href="../index.html">Home</a></div>
+            <div class="navItem">
+              <a href="sign up v.html">Vehicle Registration</a>
+            </div>
+            <div class="navItem">
+                <a href="sign up c.html">Customer Registrations</a>
+              </div>
+            <div class="navItem">
+              <a href="sign in.html">Sign In</a>
+            </div>
+            <div class="navItem">
+              <a href="bookings.html">Bookings</a>
+            </div>
+            <div class="navItem"><a href="about us.html">About Us</a></div>
+            <div class="navItem"><a href="feedback.html">Feedbacks</a></div>
+            <div class="navItem"><a href="vehicles.html">Vehicles</a></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="datetime1">
+      <p><b>Time: <span id="time1"></span></b></p>
+      <p><b>Date: <span id="date1"></span></b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+        
+        <i id="slogan"><b>A Passion For Your Excellency</b></i></p>
+        
+    </div>
+
+    <div id="bar2"><marquee>CABWAY &nbsp; &nbsp; &nbsp; CABWAY &nbsp;   &nbsp;  &nbsp;      CABWAY</marquee></div>
+    <br />
+    <!--end of the header--> 
+        <style>
+            #in1{
+                border-color: rgb(113, 113, 239);
+                border: 2px solid black;
+                border-radius: 5px;
+                width: fit-content;
+                padding: 3px;
+                margin: 10px;
+                font-size: larger;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                
+
+            }
+            .register{
+                background-color: rgb(136, 250, 250);
+                border: 2px solid black;
+                border-radius: 10px;
+                
+            }
+            input{
+                border: 2px solid black;
+                border-radius: 3px;
+                background-color: rgb(186, 186, 247);
+                font-size: larger;
+                
+            }
+            #but1{
+                background-color: rgb(86, 86, 245);
+                font-size: larger;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <script>
+            function validateForm1(){
+            var name1 = document.getElementById("fname").value;
+            var name2 = document.getElementById("lname").value;
+            if( name1 == "" || name2 == ""){
+                 window.alert("Name fields are empty!");
+                 return false;
+            }
+            else{
+                return true;
+            }
+        }
+        function validateForm2(){
+            var nchar = /^[0-9]+$/;
+            var id = document.getElementById("id1").value;
+            if(id.match(nchar)){
+                return true;
+            }
+            else{
+                window.alert("You are required to enter numbers for NIC field!");
+                return false;
+            }
+        }
+        function validateForm3(){
+            var nchar1 = /^[0-9]+$/;
+            var pnum = document.getElementById("pnumber").value;
+            if(pnum.match(nchar1)){
+                return true;
+            }
+            else{
+                window.alert("Enter a valid phone number");
+                return false;
+            }
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+            </script>
+
+
+        <div class="main" style=" margin-left: 8%; margin-right: 8%;">
+        <div class="register">
+            <h1 style="text-align: center;">Customer Registration</h1>
+            <fieldset style="border-color: black;  margin-left: 400px; margin-right: 400px;">
+            <form name="form1" method="get" onsubmit = "return validateForm1() && validateForm2() && validateForm3();">
+                <label id="in1">First Name :</label>
+                <br>
+                <input type="text" name="fname" placeholder="Enter your First Name" size="25" id="fname" >
+                <br><br>
+
+                <label id="in1">Last Name :</label>
+                <br>
+                <input type="text"  placeholder="Enter your Last Name" size="25" id = "lname">
+                <br><br>
+
+                <label id="in1">NIC Number :</label>
+                <br>
+                <input type="text" name="nic"  size="20" maxlength="15" id ="id1" required>
+                <br><br>
+
+                <label id="in1">Address :</label>
+                <br>
+                <input type="text" name="address" id="name" placeholder="Enter your street address line 1" size="30" required>
+                <br><br>
+                <input type="text" name="address" id="name" placeholder="Enter your street address line 2" size="30">
+                <br><br>
+                <input type="text" name="address" id="name" placeholder="Town" size="20">
+                <br><br>
+                <input type="text" name="address" id="name" placeholder="Postal Code" size="10" maxlength="8">
+                <br><br>
+
+                <label id="in1">Mobile Phone Number :</label>
+                <br>
+                <input type="text" name="tp nmuber"  placeholder="Enter your phone number" id="pnumber" required >
+                <br><br>
+
+                <label id="in1">E-mail Address :</label>
+                <input type="email" name="mail"  placeholder="e-mail" required>
+                <br><br>
+
+                <label id="in1">Types of Vehicle :</label>
+                <select name="vehicle" required id="in1">
+                    <option value=""></option>
+                    <option value="threewheeler">Three Wheeler</option>
+                    <option value="car">Car</option>
+                    <option value="van">Van</option>
+                    <option value="Bike">Bike</option>
+                    <option value="others">Others</option>
+                </select>
+
+                <br><br>
+                <br><br>
+
+                <input type="submit" name="btn1" value="Submit" id="but1">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <input type="reset" name="reset" value="Reset" id="but1">
+
+            </form>
+        </div>
+        </div>
+        </fieldset>
+
+        <br>
+        <br>
+    <!--begining of the footer--> 
+    <div id="bar1"><marquee>CABWAY &nbsp;  &nbsp;   &nbsp;    CABWAY   &nbsp;  &nbsp; &nbsp;     CABWAY</marquee></div>
+
+    <script>
+      var dt = new Date();
+      document.getElementById("time1").innerHTML = dt.toLocaleTimeString();
+
+      var dt = new Date();
+      document.getElementById("date1").innerHTML = dt.toLocaleDateString();
+    </script>
+
+
+
+    <div id="footer1">
+      
+            
+            <ul id="footer1" >
+              <li><a href="call center.html">Call Center</a></li>
+              <li><a href="our vision and mission.html">Our Vision & Mission</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="terms and conditions.html">Terms &amp; Conditions</a></li>
+              <li><a href="our app.html">Our App</a></li>
+            </ul>
+              
+            
+          
+    </div>
+    <div class="copyright1">
+      <p>
+        Design and Developed by
+        <a href="group 9.html" target="blank">UOR FOT ICT Group 09</a>
+      </p>
+    </div>
+
+  </div>
+
+    
+  </body>
+</html>

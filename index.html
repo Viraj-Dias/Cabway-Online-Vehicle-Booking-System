@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <title>CABWAY Online Vehicle Booking Service
+    </title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" href="./css/style1.css" />
+    
+  </head>
+  <body>
+    <div style="display: flex">
+      <div id="logo">
+        <img src="./images/logo.png" id="logoImg" />
+      </div>
+
+      <div class="nav_Head_box">
+        <div id="hedding1">
+          <h1>CABWAY Online Vehicle Booking Service</h1>
+        </div>
+
+        <div>
+          <nav class="navbar">
+            <div class="navItem"><a href="index.html">Home</a></div>
+            <div class="navItem">
+              <a href="./pages/sign up v.html">Vehicle Registration</a>
+            </div>
+            <div class="navItem">
+                <a href="./pages/sign up c.html">Customer Registrations</a>
+              </div>
+            <div class="navItem">
+              <a href="./pages/sign in.html">Sign In</a>
+            </div>
+            <div class="navItem">
+              <a href="./pages/bookings.html">Bookings</a>
+            </div>
+            <div class="navItem"><a href="./pages/about us.html">About Us</a></div>
+            <div class="navItem"><a href="./pages/feedback.html">Feedbacks</a></div>
+            <div class="navItem"><a href="./pages/vehicles.html">Vehicles</a></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="datetime1">
+      <p><b>Time: <span id="time1"></span></b></p>
+      <p><b>Date: <span id="date1"></span></b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+        
+        <i id="slogan"><b>A Passion For Your Excellency</b></i></p>
+        
+    </div>
+
+    <div id="bar2"><marquee>CABWAY &nbsp; &nbsp; &nbsp; CABWAY &nbsp;   &nbsp;  &nbsp;      CABWAY</marquee></div>
+    <br />
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide1.png" class="slideImg" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide2.jpg" class="slideImg"  />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide3.jpg" class="slideImg" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide4.jpg" class="slideImg" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide5.jpg" class="slideImg" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide6.jpg" class="slideImg"  />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide7.jpg" class="slideImg" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide8.jpg" class="slideImg"  />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide9.jpg" class="slideImg"  />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./images/slide10.jpg" class="slideImg" />
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+
+      var dt = new Date();
+      document.getElementById("time1").innerHTML = dt.toLocaleTimeString();
+
+      var dt = new Date();
+      document.getElementById("date1").innerHTML = dt.toLocaleDateString();
+    </script>
+
+    <div id="bar1"><marquee>CABWAY &nbsp;  &nbsp;   &nbsp;    CABWAY   &nbsp;  &nbsp; &nbsp;     CABWAY</marquee></div>
+
+    <div id="description1">
+      CABWAY is an online vehicle booking service that allows users to easily book rides and transportation services from the comfort of their own homes or while on the go. With Cabway, users can choose from a variety of vehicle options, including sedans, SUVs, and luxury cars, and select their desired pickup and drop-off locations.
+    </div>
+
+    <div id="footer1">
+      
+            
+            <ul id="footer1" >
+              <li><a href="./pages/call center.html">Call Center</a></li>
+              <li><a href="./pages/our vision and mission.html">Our Vision & Mission</a></li>
+              <li><a href="./pages/FAQ.html">FAQ</a></li>
+              <li><a href="./pages/terms and conditions.html">Terms &amp; Conditions</a></li>
+              <li><a href="./pages/our app.html">Our App</a></li>
+            </ul>
+              
+            
+          
+    </div>
+    <div class="copyright1">
+      <p>
+        Design and Developed by
+        <a href="./pages/group 9.html" target="blank">UOR FOT ICT Group 09</a>
+      </p>
+    </div>
+
+  </div>
+
+    
+  </body>
+</html>

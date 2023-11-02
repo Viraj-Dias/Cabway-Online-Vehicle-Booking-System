@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <title>Payments</title>
+    
+
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+
+    <link rel="stylesheet" href="../css/style1.css" />
+    
+  </head>
+  <body>
+    <div style="display: flex">
+      <div id="logo">
+        <img src="../images/logo.png" id="logoImg" />
+      </div>
+
+      <div class="nav_Head_box">
+        <div id="hedding1">
+          <h1>CABWAY Online Vehicle Booking Service</h1>
+        </div>
+
+        <div>
+          <nav class="navbar">
+            <div class="navItem"><a href="../index.html">Home</a></div>
+            <div class="navItem">
+              <a href="sign up v.html">Vehicle Registration</a>
+            </div>
+            <div class="navItem">
+                <a href="sign up c.html">Customer Registrations</a>
+              </div>
+            <div class="navItem">
+              <a href="sign in.html">Sign In</a>
+            </div>
+            <div class="navItem">
+              <a href="bookings.html">Bookings</a>
+            </div>
+            <div class="navItem"><a href="about us.html">About Us</a></div>
+            <div class="navItem"><a href="feedback.html">Feedbacks</a></div>
+            <div class="navItem"><a href="vehicles.html">Vehicles</a></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="datetime1">
+      <p><b>Time: <span id="time1"></span></b></p>
+      <p><b>Date: <span id="date1"></span></b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+        
+        <i id="slogan"><b>A Passion For Your Excellency</b></i></p>
+        
+    </div>
+
+    <div id="bar2"><marquee>CABWAY &nbsp; &nbsp; &nbsp; CABWAY &nbsp;   &nbsp;  &nbsp;      CABWAY</marquee></div>
+    <br />
+    <!--end of the header-->
+  <style>
+   #h1{color:blueviolet;
+  font-size: 25px;
+  font-style: arial;}
+
+  #sec1{ border: 5px outset red;
+    background-color:rgb(231, 243, 109);
+    text-align: center;
+  height: 100vh;
+  border-radius: 15px;
+  margin: 20px;
+  }
+    
+    fieldset{
+    
+    
+    padding: 0;
+    display:table;
+    margin-left: 10px;
+    margin-right: 10px
+    }
+  form {color:green;
+    font-size: 18px;
+    font-style: arial}
+
+    #sec2{
+      width:50%;
+      height: 50vh;
+      margin:10px;
+      border:3px solid rgb(8, 61, 219);
+      background-color:aquamarine;
+      margin-left:25%;
+      padding:3%;
+      border-radius: 15px;
+
+    }
+    #sub1{
+      width: 80px;
+      height: 30px;
+      margin: 10px;
+      border: 2px solid red;
+      border-radius: 5px;
+      color: rgb(50, 98, 241);
+      font-weight: bold;
+      border-radius: 15px;
+
+    }
+  
+  </style>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+        
+            function validate_form ()
+              {
+               var numbers = /^[0-9]+$/;
+               var num=document.getElementById("Cno").value;
+               if(num.match (numbers))
+                 {
+                  return true;
+                 }
+               else
+                 {
+                 window.alert("You can only enter numbers for Card number");
+                 return false;
+                 }
+              }
+
+              </script>
+<div id="sec1">
+<form name="myform" onsubmit="return validate_form()"action="#">
+
+        <h1 id="h1">Payment Gateway</h1>
+        <div class="container"></td></tr>
+          <div id="sec2">
+            
+                <center><table width="500px"><tr><td>
+                    <span>Country:</span></td>
+                    <td><input type="text"  class="Country" required></td></tr>            
+                 
+
+                  
+                  <tr><td>
+                    <span>Card Number:</span></td>
+                    <td><input type="text" maxlength="16" class="Card no" id="Cno" required></td></tr>             
+                  
+
+                  
+
+                  <tr><td>
+                    <span>Card Holder:</span></td>
+                    <td><input type="text"  class="Card Holder" required></td></tr>             
+                  
+                  <tr><td>
+                    <tr><td><span>Expiary mm:</span></td>
+                    <td><select name="" id="" class="month-input" required>
+                    <option value="month" selected disabled>Month</option>    
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="Novermber">Novermber</option>
+                    <option value="December">December</option>
+
+
+
+
+
+                </select></td></tr>
+
+                
+                 
+                
+                    <tr><td>
+                      <span>Expiary Year:</span></td>
+                      <td><select name="" id="" class="Year-input" required>
+                      <option value="Year" selected disabled>Year</option>    
+                      
+                       <option value="2023">2023</option>
+                       <option value="2024">2024</option>
+                       <option value="2025">2025</option>
+                       <option value="2026">2026</option>
+                       <option value="2027">2027</option>
+                       <option value="2028">2028</option>
+                       <option value="2029">2029</option>
+                       <option value="2030">2030</option>
+                
+                  </select></td></tr>
+  
+                  
+  
+                 <tr><td>
+                    <span>CVV</span></td>
+                   <td><input type="text" maxlength="4" class="CVV" required>
+                 </td></tr>
+
+                  <tr><td>
+                  <input type="submit" value="Submit" class="Submit" id="sub1"></td>
+                  <td><input type="reset" value="Clear" class="Clear" id="sub1"></td>
+                </table></center><br/><br/><br/>
+                  
+            <img src="../images/card logo.png" width="500px" height="150px" style="margin:30px; border: 5px solid black;border-radius: 5px;">
+          
+                  
+            </form>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div id="bar1"><marquee>CABWAY &nbsp;  &nbsp;   &nbsp;    CABWAY   &nbsp;  &nbsp; &nbsp;     CABWAY</marquee></div>
+
+
+        <div id="footer1">
+          
+                
+                <ul id="footer1" >
+                  <li><a href="call center.html">Call Center</a></li>
+                  <li><a href="our vision and mission.html">Our Vision & Mission</a></li>
+                  <li><a href="FAQ.html">FAQ</a></li>
+                  <li><a href="terms and conditions.html">Terms &amp; Conditions</a></li>
+                  <li><a href="our app.html">Our App</a></li>
+                </ul>
+                  
+                
+              
+        </div>
+        <div class="copyright1">
+          <p>
+            Design and Developed by
+            <a href="group 9.html" target="blank">UOR FOT ICT Group 09</a>
+          </p>
+        </div>
+      
+      </div>
+      
+        
+      </body>
+      </html>
